@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="home">
         <div class="nav">
             <nav>
                 <ul>
@@ -67,17 +67,14 @@
     </div>
     <footer class="footer">
         <h1>Contact us</h1>
-        <div class="inside"><input type="text" placeholder="enter your name"></div>
-        <div class="inside"><input type="email" placeholder="enter your email"></div>
-        <div class="inside"><input type="tel" placeholder="enter you phone number"></div>
-        <div class="inside"><textarea cols="30" rows="10" placeholder="give your feedback here"></textarea></div>
-        <button class="btn" onclick="func()">submit</button>
+        <form id="contact">
+            <div class="inside"><input type="text" placeholder="enter your name" minlength="3" required></div>
+            <div class="inside"><input type="email" placeholder="enter your email" required></div>
+            <div class="inside"><input type="tel" placeholder="enter you phone number" minlength="10" maxlength="10" required></div>
+            <div class="inside"><textarea cols="30" rows="10" placeholder="give your feedback here" required></textarea></div>
+            <button class="btn" type="submit">submit</button>
+        </form>
     </footer>
-    <script>
-        function func() {
-            alert("we will contact you soon");
-        }
-    </script>
 </body>
 
 </html>
